@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de PCs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de PCs</h1>
+        <nav>
+            <ul>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#pedido">Pedido Personalizado</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tienda">
+            <h2>Tienda de PCs Montados</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="images/pc1.jpg" alt="PC 1">
+                    <h3>PC Gamer 1</h3>
+                    <p>Descripción del PC Gamer 1.</p>
+                    <p>Precio: $1000</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="images/pc2.jpg" alt="PC 2">
+                    <h3>PC Gamer 2</h3>
+                    <p>Descripción del PC Gamer 2.</p>
+                    <p>Precio: $1200</p>
+                    <button>Comprar</button>
+                </div>
+                <!-- Puedes agregar más productos aquí -->
+            </div>
+        </section>
+        <section id="pedido">
+            <h2>Pedido Personalizado</h2>
+            <form action="send_order.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="descripcion">Descripción del Pedido:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Venta de PCs</p>
+    </footer>
+</body>
+</html>
